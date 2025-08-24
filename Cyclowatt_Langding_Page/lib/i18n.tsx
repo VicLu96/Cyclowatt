@@ -138,7 +138,7 @@ const translations = {
 
     // Announcement Section
     "announcement.text":
-      "Der CycloWatt für nur 150 CHF!",
+      "Der CycloWatt für nur für 150 CHF!",
 
     // Features Section
     "features.title": "CYCLOWATT",

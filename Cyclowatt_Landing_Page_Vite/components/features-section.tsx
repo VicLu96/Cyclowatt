@@ -6,21 +6,21 @@ const features = [
   {
     titleKey: "features.integration.title",
     descriptionKey: "features.integration.description",
-    image: "/IMG_4.jpg",
+    image: "/cycling-shoe-power-meter.png",
     imageAlt: "Cycling shoe with integrated power meter",
     tagKey: "features.integration.tag",
   },
   {
     titleKey: "features.components.title",
     descriptionKey: "features.components.description",
-    image: "/IMG_5.jpg",
+    image: "/cycling-shoe-power-meter.png",
     imageAlt: "Precision cycling components breakdown",
     tagKey: "features.components.tag",
   },
   {
     titleKey: "features.technology.title",
     descriptionKey: "features.technology.description",
-    image: "/IMG_6.png",
+    image: "/cycling-shoe-power-meter.png",
     imageAlt: "Advanced electronic components",
     tagKey: "features.technology.tag",
   },
@@ -30,7 +30,7 @@ export function FeaturesSection() {
   const { t } = useI18n()
 
   return (
-    <section className="py-5 lg:py-12 px-4 sm:px-6 lg:px-8 bg-[#f0ebe1]" data-section="features">
+    <section className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8 bg-[#f0ebe1]" data-section="features">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold font-sans text-[#2c3e2d] mb-6">
@@ -62,15 +62,11 @@ export function FeaturesSection() {
               </div>
 
               <div className={`${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-                <div className="max-w-lg mx-auto">
-                  <div className={`${index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}`}>
-                    <img
-                      src={feature.image || "/placeholder.svg"}
-                      alt={feature.imageAlt}
-                      className="w-full h-[300px] object-cover rounded-lg"
-                    />
-                  </div>
-                </div>
+                <img
+                  src={feature.image || "/placeholder.svg"}
+                  alt={feature.imageAlt}
+                  className="w-full h-[300px] object-cover rounded-2xl shadow-lg"
+                />
               </div>
             </div>
           ))}
