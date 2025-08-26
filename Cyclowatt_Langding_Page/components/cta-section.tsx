@@ -21,7 +21,7 @@ export function CTASection() {
 
   return (
     <section className="bg-gradient-to-r from-primary to-secondary py-5 lg:py-12">
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex justify-center mb-8">
             <Image

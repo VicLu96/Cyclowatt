@@ -27,7 +27,7 @@ export function HeroSection() {
 
   useEffect(() => {
     pageLoadTime.current = Date.now()
-    emailjs.init("YOUR_PUBLIC_KEY") // Replace with your actual EmailJS public key
+    emailjs.init("fwHGLRkEmDK5VT3NJ") // Replace with your actual EmailJS public key
   }, [])
 
   const nextMedia = () => {
@@ -59,12 +59,12 @@ export function HeroSection() {
       }
 
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_ix9020g", // Replace with your EmailJS service ID
+        "template_0srka4k", // Replace with your EmailJS template ID
         templateParams,
       )
 
-      setSubmitMessage(`Thank you! Your email has been saved and logged. (Time spent: ${timeSpentSeconds}s)`)
+      setSubmitMessage(`Thank you!`)
       setEmail("")
     } catch (error) {
       console.log("[v0] Error submitting email:", error)

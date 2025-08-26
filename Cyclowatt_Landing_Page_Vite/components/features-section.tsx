@@ -30,7 +30,7 @@ export function FeaturesSection() {
   const { t } = useI18n()
 
   return (
-    <section className="py-20 lg:py-32 px-4 sm:px-6 lg:px-8 bg-[#f0ebe1]" data-section="features">
+    <section className="py-8 lg:py-10 px-4 sm:px-6 lg:px-8 bg-[#f0ebe1]" data-section="features">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold font-sans text-[#2c3e2d] mb-6">

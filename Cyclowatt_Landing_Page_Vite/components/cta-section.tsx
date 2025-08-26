@@ -19,15 +19,15 @@ export function CTASection() {
   }
 
   return (
-    <section className="bg-gradient-to-r from-primary to-secondary py-20 lg:py-32">
+    <section className="bg-gradient-to-r from-primary to-secondary py-8 lg:py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <div className="flex justify-center mb-8">
             <img
-              src="/logo_transparent_black.png"
+              src="/logo_transparent.png"
               alt="CycloWatt Logo"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
               className="h-12 w-auto"
             />
           </div>

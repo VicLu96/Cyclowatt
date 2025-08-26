@@ -23,7 +23,7 @@ export function StrengthsSection() {
 
   return (
     <section className="py-16" style={{ backgroundColor: "#2c3e2d" }}>
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-bold text-center mb-12 text-white font-[family-name:var(--font-work-sans)]">
           {t("strengths.title")}
         </h2>
