@@ -1,5 +1,5 @@
 "use client"
-import { Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { Github, Twitter, Linkedin, Mail, Instagram } from "lucide-react"
 import { useI18n } from "@/lib/i18n"
 
 export function Footer() {
@@ -19,99 +19,19 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Github className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Mail className="h-5 w-5" />
-              </a>
             </div>
           </div>
 
-          <div>
-            <h3 className="font-semibold font-sans mb-4 text-white">{t("footer.product")}</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.features")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.pricing")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Integrations
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  API
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold font-sans mb-4 text-white">{t("footer.company")}</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.about")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.blog")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.careers")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.contact")}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold font-sans mb-4 text-white">{t("footer.support")}</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.help")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  {t("footer.documentation")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Status
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Privacy
-                </a>
-              </li>
-            </ul>
-          </div>
+         
         </div>
 
+      <div className="border-t border-gray-600"></div>
+      
         <div className="mt-12 border-t border-gray-600 pt-8">
           <p className="text-center text-sm text-gray-300 font-sans">{t("footer.rights")}</p>
         </div>
