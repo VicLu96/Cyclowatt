@@ -9,12 +9,12 @@ import { useI18n } from "@/lib/i18n"
 import emailjs from "@emailjs/browser"
 
 const heroMedia = [
-  { type: "image", src: "/modern-analytics-dashboard.png" },
-  { type: "image", src: "/team-collaboration-workspace.png" },
-  { type: "video", src: "/cyclists.mp4" },
-  { type: "image", src: "/automated-workflow-visualization.png" },
-  { type: "image", src: "/placeholder-r7ciz.png" },
-  { type: "image", src: "/integration-dashboard.png" },
+  { type: "image", src: "/IMG_WEB_1.png" },
+  { type: "image", src: "/IMG_WEB_2.png" },
+  { type: "image", src: "/IMG_WEB_3.png" },
+  { type: "video", src: "/MVI_1.MOV" },
+  { type: "image", src: "/IMG_WEB_4.jpg" },
+  { type: "image", src: "/IMG_WEB_5.png" },
 ]
 
 export function HeroSection() {
@@ -136,15 +136,15 @@ export function HeroSection() {
               className="text-4xl font-bold tracking-tight font-sans sm:text-5xl lg:text-6xl"
               style={{ color: "#4a6b4a" }}
             >
-              {t("hero.headline")}
+              {t("hero.title")}
             </h1>
-            <p className="text-lg leading-8 text-muted-foreground font-sans">{t("hero.description")}</p>
+            <p className="text-lg leading-8 text-muted-foreground font-sans">{t("hero.subtitle")}</p>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col sm:flex-row gap-3">
                 <Input
                   type="email"
-                  placeholder={t("hero.emailPlaceholder")}
+                  placeholder={t("hero.email.placeholder")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="flex-1 h-12 border-primary/20 focus:border-primary bg-white"
@@ -157,7 +157,7 @@ export function HeroSection() {
                   className="h-12 px-8 font-medium bg-primary hover:bg-primary/90"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Saving..." : t("hero.getStarted")}
+                  {isSubmitting ? "Saving..." : t("hero.email.submit")}
                 </Button>
               </div>
               {submitMessage && (
@@ -166,7 +166,7 @@ export function HeroSection() {
                 </p>
               )}
               <p className="text-sm text-muted-foreground">
-                No credit card required • 14-day free trial • Cancel anytime
+                {t("hero.subtext.emailentry_1")} • {t("hero.subtext.emailentry_2")}
               </p>
             </form>
           </div>

@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="border-t" style={{ backgroundColor: "#2c3e2d" }}>
-      <div className="container py-12 lg:py-16 px-6 lg:px-8">
+      <div className="container py-12 lg:py-10 px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
@@ -23,9 +23,6 @@ export function Footer() {
               />
               <span className="text-xl font-bold font-sans text-white">CycloWatt</span>
             </div>
-            <p className="text-sm text-gray-300 font-sans max-w-xs">
-              Power up your energy solutions with intelligent monitoring and optimization for modern energy needs.
-            </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-300 hover:text-white">
                 <Instagram className="h-5 w-5" />
@@ -43,8 +40,12 @@ export function Footer() {
                 
         </div>
 
-        <div className="mt-12 border-t border-gray-600 pt-8">
-          <p className="text-center text-sm text-gray-300 font-sans">{t("footer.rights")}</p>
+      </div>
+       <div className="py-12 ">
+      <div className="mt-0 w-full border-t border-gray-600 pt-8 flex justify-center">
+          <p className="text-center text-sm text-gray-300 font-sans">
+          {t("footer.rights")}
+          </p>
         </div>
       </div>
     </footer>

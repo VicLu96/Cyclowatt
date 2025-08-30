@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
 
-export type Language = "en" | "de"
+export type Language = "de" | "en"
 
 interface I18nContextType {
   language: Language
@@ -58,26 +58,26 @@ const translations = {
     // Hero Section
     "hero.title": "Revolutionary Power Measurement for Cyclists",
     "hero.subtitle":
-      "Experience precision like never before with our cutting-edge power meter technology designed specifically for cycling enthusiasts.",
+      "CycloWatt is your affordable and simple to use powermeter. We use cutting edge technology to deliver precision to your cycling experience. Our powermeter is seamlessly integrated into the cleat: quick to set up and effortless to swap between bikes.",
     "hero.email.placeholder": "Enter your email",
-    "hero.email.submit": "Get Early Access",
+    "hero.email.submit": "Get Early-Bird-Price for only 179 CHF",
     "hero.subtext.emailentry_1": "no commitment",
-    "hero.subtext.emailentry_2": "no Credit card",
+    "hero.subtext.emailentry_2": "only for notification",
 
     // Strengths Section
-    "strengths.title": "WHY CHOOSE US",
-    "strengths.lowPrice": "LOW PRICE",
-    "strengths.simpleSetup": "Simple Set-Up",
-    "strengths.highAccuracy": "HIGH ACCURACY",
+    "strengths.title": "Why CycloWatt",
+    "strengths.lowPrice": "Affordable Power Measurment",
+    "strengths.simpleSetup": "Simple Installation",
+    "strengths.highAccuracy": "No Compromise on Accuracy",
 
     // Announcement Section
-    "announcement.text": "Get the CycloWatt for only 150 CHF!",
+    "announcement.text": "Secure your early-bird access for 179 CHF!",
 
     // Features Section
     "features.title": "CYCLOWATT",
     "features.subtitle": "POWER IT UP",
     "features.description":
-      "Our innovative power meter system integrates seamlessly with your cycling setup, providing cutting edge power measurement technology at lowest price.",
+      "Our innovative power meter system integrates seamlessly with your cycling setup, providing cutting edge power measurement technology.",
     "features.integration.tag": "INTEGRATION",
     "features.integration.title": "Seamless Integration",
     "features.integration.description":
@@ -89,12 +89,11 @@ const translations = {
     "features.technology.tag": "TECHNOLOGY",
     "features.technology.title": "Advanced Electronics",
     "features.technology.description":
-      "State-of-the-art electronics housed in a weatherproof design. Our proprietary algorithms ensure ±4% accuracy while maintaining long battery life and reliable connectivity.",
-
+      "CycloWatt connects seamlessly to your bike computer via Bluetooth. Easy to charge, it delivers up to X hours of battery life with connectivity you can rely on.",
     // CTA Section
-    "cta.title": "Power Up Your Energy Solutions",
+    "cta.title": "Cycle with Precision",
     "cta.description":
-      "Join thousands of cyclists who have already transformed their training with CycloWatt. Get started today and experience the difference precision makes.",
+      "Join the other cyclists who have already transformed their training with CycloWatt. Get started today and experience the difference precision makes.",
     "cta.button": "Start Your Journey",
   
 
@@ -122,46 +121,46 @@ const translations = {
     "header.reserve": "Reservieren",
 
     // Hero Section
-    "hero.title": "Revolutionäre Leistungsmessung für Radfahrer",
+    "hero.title": "Sichere dir Revolutionäre Leistungsmessung für nur 178 CHF",
     "hero.subtitle":
-      "Erleben Sie Präzision wie nie zuvor mit unserer hochmodernen Leistungsmesser-Technologie, die speziell für Radsport-Enthusiasten entwickelt wurde.",
+      "CycloWatt ist dein erschwinglicher und unkomplizierter Powermeter. Nahtlos in die Schuhplatte integriert, in Sekunden installiert und mühelos zwischen Fahrrädern wechselbar. Bist du interessiert? Dann registrier dich. So können wir dich kontaktieren soblad der Leistungsmesser verfügbar ist und du erhällst den Early-Bird-Preis von 179 CHF.",
     "hero.email.placeholder": "E-Mail eingeben",
-    "hero.email.submit": "Frühen Zugang erhalten",
-    "hero.subtext.emailentry_1": "Keine Verpflichtung",
-    "hero.subtext.emailentry_2": "Nur für die Benachrichtigung",
+    "hero.email.submit": "Early-Bird-Preis von nur 179 CHF sichern.",
+    "hero.subtext.emailentry_1": "Keine Kaufverpflichtung",
+    "hero.subtext.emailentry_2": "Nur für die Benachrichtigung sobald verfügbar",
 
     // Strengths Section
-    "strengths.title": "WARUM DU UNS WÄHLST",
-    "strengths.lowPrice": "NIEDRIGER PREIS",
-    "strengths.simpleSetup": "EINFACH INSTALLIERT",
-    "strengths.highAccuracy": "HOHE GENAUIGKEIT",
+    "strengths.title": "Wieso CycloWatt",
+    "strengths.lowPrice": "Erschwingliche Leistungsmessung",
+    "strengths.simpleSetup": "Einfach Installiert",
+    "strengths.highAccuracy": "Kein Kompromiss bei der Genauigkeit",
 
     // Announcement Section
     "announcement.text":
-      "Der CycloWatt für nur für 150 CHF!",
+      "Hol dir dein Early-Bird-Angebot für nur 179 CHF!",
 
     // Features Section
     "features.title": "CYCLOWATT",
     "features.subtitle": "POWER IT UP",
     "features.description":
-      "Unser innovatives Leistungsmesser-System integriert sich nahtlos in Ihr Radsport-Setup und bietet modernste Leistungsmess-Technologie zum niedrigsten Preis.",
+      "Unser innovatives Powermeter-System fügt sich nahtlos in dein Setup ein und bietet modernste Leistungsmessungstechnologie.",
     "features.integration.tag": "INTEGRATION",
     "features.integration.title": "Nahtlose Integration",
     "features.integration.description":
-      "Perfekte Integration mit Radsportschuhen. Der Leistungsmesser wird in Sekunden so einfach wie jeder andere Cleat am Radsportschuh befestigt und bietet ein einfaches System-Setup ohne Beeinträchtigung Ihrer natürlichen Tretbewegung.",
+      "Perfekt integriert: Der Powermeter lässt sich wie ein gewöhnliches Cleat befestigen und ist in Sekunden startklar, ganz ohne Einfluss auf deinen Pedaltritt.",
     "features.components.tag": "KOMPONENTEN",
     "features.components.title": "Präzisions-Komponenten",
     "features.components.description":
       "Jede Komponente ist so konstruiert, dass sie perfekt in unsere maßgeschneiderten Radsport-Cleats passt und maximale Genauigkeit und Haltbarkeit ermöglicht. Von fortschrittlichen Sensoren bis hin zu robusten Gehäusen arbeitet jedes Teil zusammen, um beste Leistung unter anspruchsvollsten Bedingungen zu liefern.",
     "features.technology.tag": "TECHNOLOGIE",
-    "features.technology.title": "Fortschrittliche Elektronik",
+    "features.technology.title": "Verbunden über Bluetooth",
     "features.technology.description":
-      "Modernste Elektronik in einem wetterfesten Design. Unsere proprietären Algorithmen gewährleisten ±4% Genauigkeit bei gleichzeitig langer Batterielaufzeit und zuverlässiger Konnektivität.",
+      "CycloWatt verbindet sich nahtlos über Bluetooth mit deinem Fahrradcomputer und speichert alle Daten in deiner bevorzugten App. Einfach aufzuladen, bietet es bis zu 10 Stunden Akkulaufzeit bei zuverlässiger Konnektivität.",
 
     // CTA Section
-    "cta.title": "Stärken Sie Ihre Energie-Lösungen",
+    "cta.title": "Fahre mit Präzision",
     "cta.description":
-      "Schließen Sie sich Tausenden von Radfahrern an, die ihr Training bereits mit CycloWatt transformiert haben. Starten Sie heute und erleben Sie den Unterschied, den Präzision macht.",
+      "Schliess dich anderen Radfahrern an, die ihr Training bereits mit CycloWatt transformiert haben. Registrier dich um den Early-Bird-Preis zu sichern.",
     "cta.button": "Starten Sie Ihre Reise",
 
     // Footer
