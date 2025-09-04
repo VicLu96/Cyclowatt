@@ -47,7 +47,7 @@ export function CTASection() {
               className="h-12 px-8 text-base font-medium border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
               onClick={scrollToFeatures}
             >
-              Learn More
+              {t("cta.button_2")}
             </Button>
           </div>
           <div className="mt-8 text-sm text-primary-foreground/80">

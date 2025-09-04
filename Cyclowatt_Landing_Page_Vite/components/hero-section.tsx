@@ -9,12 +9,12 @@ import { useI18n } from "@/lib/i18n"
 import emailjs from "@emailjs/browser"
 
 const heroMedia = [
-  { type: "image", src: "/IMG_WEB_1.png" },
-  { type: "image", src: "/IMG_WEB_2.png" },
-  { type: "image", src: "/IMG_WEB_3.png" },
-  { type: "video", src: "/MVI_1.MOV" },
+  { type: "image", src: "/IMG_WEB_1.jpg" },
+  { type: "image", src: "/IMG_WEB_2.jpg" },
+  { type: "image", src: "/IMG_WEB_3.jpg" },
+  { type: "video", src: "/WEB_1.mp4" },
   { type: "image", src: "/IMG_WEB_4.jpg" },
-  { type: "image", src: "/IMG_WEB_5.png" },
+  { type: "image", src: "/IMG_WEB_5.jpg" },
 ]
 
 export function HeroSection() {
@@ -59,7 +59,7 @@ export function HeroSection() {
       }
 
       await emailjs.send(
-        "service_ix9020g", // Replace with your EmailJS service ID
+        "service_k9c4ayd", // Replace with your EmailJS service ID
         "template_0srka4k", // Replace with your EmailJS template ID
         templateParams,
       )
@@ -77,7 +77,62 @@ export function HeroSection() {
   return (
     <section className="py-6 lg:py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className=" lg:grid-cols-2 grid grid-cols-1 gap-12 items-center">
+          
+
+          <div className="space-y-6">
+            <div className="flex justify-center lg:justify-start mb-6">
+              <img
+                src="/logo_transparent_black.png"
+                alt="CycloWatt Logo"
+                width={120}
+                height={120}
+                className="h-12 w-auto"
+              />
+            </div>
+            <h1
+              className="text-4xl font-bold tracking-tight font-sans sm:text-5xl lg:text-6xl"
+              style={{ color: "#4a6b4a" }}
+            >
+              {t("hero.title")}
+            </h1>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Input
+                  type="email"
+                  placeholder={t("hero.email.placeholder")}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 h-12 border-primary/20 focus:border-primary bg-white"
+                  required
+                  disabled={isSubmitting}
+                />
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="h-12 px-8 font-medium bg-primary hover:bg-primary/90"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Saving..." : t("hero.email.submit")}
+                </Button>
+              </div>
+              {submitMessage && (
+                <p className={`text-sm ${submitMessage.includes("Thank you") ? "text-green-600" : "text-red-600"}`}>
+                  {submitMessage}
+                </p>
+              )}
+              <p className="text-sm text-muted-foreground">
+                {t("hero.subtext.emailentry_1")} • {t("hero.subtext.emailentry_2")}
+              </p>
+            </form>
+
+            <p className="text-lg leading-8 text-muted-foreground font-sans">{t("hero.subtitle")}</p>
+
+            
+          </div>
+
+
           <div className="relative">
             <div className="relative overflow-hidden rounded-lg shadow-lg max-w-md mx-auto">
               {heroMedia[currentMedia]?.type === "video" ? (
@@ -120,55 +175,6 @@ export function HeroSection() {
                 />
               ))}
             </div>
-          </div>
-
-          <div className="space-y-6">
-            <div className="flex justify-center lg:justify-start mb-6">
-              <img
-                src="/logo_transparent_black.png"
-                alt="CycloWatt Logo"
-                width={120}
-                height={120}
-                className="h-12 w-auto"
-              />
-            </div>
-            <h1
-              className="text-4xl font-bold tracking-tight font-sans sm:text-5xl lg:text-6xl"
-              style={{ color: "#4a6b4a" }}
-            >
-              {t("hero.title")}
-            </h1>
-            <p className="text-lg leading-8 text-muted-foreground font-sans">{t("hero.subtitle")}</p>
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Input
-                  type="email"
-                  placeholder={t("hero.email.placeholder")}
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 h-12 border-primary/20 focus:border-primary bg-white"
-                  required
-                  disabled={isSubmitting}
-                />
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="h-12 px-8 font-medium bg-primary hover:bg-primary/90"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Saving..." : t("hero.email.submit")}
-                </Button>
-              </div>
-              {submitMessage && (
-                <p className={`text-sm ${submitMessage.includes("Thank you") ? "text-green-600" : "text-red-600"}`}>
-                  {submitMessage}
-                </p>
-              )}
-              <p className="text-sm text-muted-foreground">
-                {t("hero.subtext.emailentry_1")} • {t("hero.subtext.emailentry_2")}
-              </p>
-            </form>
           </div>
         </div>
       </div>

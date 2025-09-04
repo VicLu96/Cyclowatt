@@ -13,14 +13,14 @@ const features = [
   {
     titleKey: "features.components.title",
     descriptionKey: "features.components.description",
-    image: "/IMG_WEB_7.png",
+    image: "/IMG_WEB_7.jpg",
     imageAlt: "Precision cycling components breakdown",
     tagKey: "features.components.tag",
   },
   {
     titleKey: "features.technology.title",
     descriptionKey: "features.technology.description",
-    image: "/IMG_WEB_8.png",
+    image: "/IMG_WEB_8.jpg",
     imageAlt: "Advanced electronic components",
     tagKey: "features.technology.tag",
   },
